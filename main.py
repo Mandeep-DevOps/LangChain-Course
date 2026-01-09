@@ -28,7 +28,7 @@ As a registered member of the Republican Party, Schwarzenegger chaired the Presi
         input_variables=["information"], template=summary_template
     )
 
-    # llm = ChatOllama(model="gemma3:270m", temperature=0)
+    #llm = ChatOllama(model="gemma3:270m", temperature=0)
     llm = ChatOpenAI(model="gpt-5", temperature=0)
     chain = summary_prompt_template | llm
 
